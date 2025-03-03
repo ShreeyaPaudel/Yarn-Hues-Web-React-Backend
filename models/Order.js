@@ -45,3 +45,4 @@ const Order = sequelize.define("Order", {
 Order.belongsTo(User, { foreignKey: "userId" });
 
 module.exports = Order;
+///
