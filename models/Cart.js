@@ -42,7 +42,7 @@ const Cart = sequelize.define("Cart", {
     tableName: 'carts'
   });
 
-// Define associations
+
 Cart.belongsTo(User, { foreignKey: "userId" });
 Cart.belongsTo(Product, { foreignKey: "productId" });
 
