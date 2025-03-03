@@ -9,7 +9,7 @@ const UserMock = dbMock.define("User", {
   password: "hashedpassword",
 });
 
-// Mock Order Model
+
 const OrderMock = dbMock.define("Order", {
   id: 1,
   userId: 1,
@@ -18,7 +18,7 @@ const OrderMock = dbMock.define("Order", {
   paymentMethod: "Credit Card",
 });
 
-// Associate Order with User
+
 OrderMock.belongsTo(UserMock, { foreignKey: "userId" });
 
 describe("Order Model", () => {
