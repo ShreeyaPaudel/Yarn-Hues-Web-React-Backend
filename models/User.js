@@ -1,5 +1,5 @@
-const { DataTypes } = require("sequelize"); // Remove Sequelize import
-const sequelize = require("../database/config"); // ✅ Fix: Import sequelize correctly
+const { DataTypes } = require("sequelize"); 
+const sequelize = require("../database/config"); 
 
 const User = sequelize.define("User", {
   id: {
@@ -16,7 +16,7 @@ const User = sequelize.define("User", {
     allowNull: false,
     unique: true,
     validate: {
-      isEmail: true, // Ensures valid email format
+      isEmail: true, 
     },
   },
   password: {
