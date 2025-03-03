@@ -17,7 +17,7 @@ const verifyToken = (req, res, next) => {
   }
 };
 
-// Middleware to check if the user is an admin
+
 const verifyAdmin = (req, res, next) => {
   exports.verifyToken(req, res, () => {
     if (req.user.role === "admin") {
