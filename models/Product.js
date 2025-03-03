@@ -29,7 +29,7 @@ const Product = sequelize.define("Product", {
     allowNull: false,
   },
   imageUrl: {
-    type: DataTypes.STRING, // URL to product image
+    type: DataTypes.STRING, 
     allowNull: true,
   },
   createdAt: {
