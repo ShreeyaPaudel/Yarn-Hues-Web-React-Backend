@@ -14,11 +14,6 @@ sequelize.authenticate()
   .catch(err => console.error("Database connection error:", err));
 
 
-// Import models ///////
 
-
-// Sync models
-// sequelize.sync({ alter: true }) // alter: true ensures models match DB without data loss
-//   .then(() => console.log("All models synchronized"))
 
 module.exports = sequelize;
