@@ -15,7 +15,7 @@ const Order = sequelize.define("Order", {
       model: User,
       key: "id",
     },
-  },///
+  },
   totalAmount: {
     type: DataTypes.FLOAT,
     allowNull: false,
@@ -41,8 +41,8 @@ const Order = sequelize.define("Order", {
     tableName: 'orders'
   });
 
-// Define associations
+
 Order.belongsTo(User, { foreignKey: "userId" });
 
 module.exports = Order;
-///
+
