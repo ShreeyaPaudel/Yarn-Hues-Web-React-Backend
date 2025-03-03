@@ -14,7 +14,7 @@ sequelize.authenticate()
   .catch(err => console.error("Database connection error:", err));
 
 
-// Import models
+// Import models ///////
 
 
 // Sync models
