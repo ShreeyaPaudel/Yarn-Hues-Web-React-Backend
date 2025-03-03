@@ -28,7 +28,7 @@ describe("User Model", () => {
     expect(user.role).toBe("admin");
     expect(user.address).toBe("456 Elm St");
     expect(user.phone).toBe("9876543210");
-  });////////
+  });
 
 
 });
