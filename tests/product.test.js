@@ -41,7 +41,7 @@ describe("Product Model", () => {
       category: "Books",
     });
 
-    expect(product.stock).toBe(0); // Default stock value
+    expect(product.stock).toBe(0); 
   });
 
 });
