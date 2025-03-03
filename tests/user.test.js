@@ -20,7 +20,7 @@ describe("User Model", () => {
       role: "admin",
       address: "456 Elm St",
       phone: "9876543210",
-    });
+    });//
 
     expect(user.name).toBe("Jane Doe");
     expect(user.email).toBe("janedoe@example.com");
