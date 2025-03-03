@@ -15,7 +15,7 @@ const ProductMock = dbMock.define("Product", {
   price: 99.99,
 });
 
-// Mock Cart Model
+
 const CartMock = dbMock.define("Cart", {
   id: 1,
   userId: 1,
