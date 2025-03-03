@@ -28,7 +28,7 @@ const Order = sequelize.define("Order", {
   paymentMethod: {
     type: DataTypes.STRING,
     allowNull: false,
-  },////
+  },
   createdAt: {
     type: DataTypes.DATE,
     defaultValue: DataTypes.NOW,
