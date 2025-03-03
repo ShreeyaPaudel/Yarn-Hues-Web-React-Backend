@@ -1,14 +1,14 @@
 const SequelizeMock = require("sequelize-mock");
 const dbMock = new SequelizeMock();
 
-// Mock User Model
+
 const UserMock = dbMock.define("User", {
   id: 1,
   name: "John Doe",
   email: "johndoe@example.com",
 });
 
-// Mock Product Model
+
 const ProductMock = dbMock.define("Product", {
   id: 1,
   name: "Sample Product",
@@ -23,7 +23,7 @@ const CartMock = dbMock.define("Cart", {
   quantity: 2,
 });
 
-// Associate Cart with User and Product
+
 CartMock.belongsTo(UserMock, { foreignKey: "userId" });
 CartMock.belongsTo(ProductMock, { foreignKey: "productId" });
 
