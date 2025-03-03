@@ -20,6 +20,5 @@ sequelize.authenticate()
 // Sync models
 // sequelize.sync({ alter: true }) // alter: true ensures models match DB without data loss
 //   .then(() => console.log("All models synchronized"))
-//   .catch(err => console.error("Model sync error:", err));
 
 module.exports = sequelize;
